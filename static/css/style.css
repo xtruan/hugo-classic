@@ -13,6 +13,16 @@
       color: #EBC3DB;
     }
 
+    .tags a {
+      display: inline-block;
+      font-size: 0.8rem;
+      border: 1px solid #EBC3DB;
+      border-radius: 3px;
+      padding: 0.1rem 0.4rem;
+      margin-bottom: 0.2rem;
+      /* text-transform: uppercase; */
+    }
+
     header {
       background: #393E41;
       border-bottom: 2px dotted #EBC3DB;
@@ -44,6 +54,16 @@
 
     a {
       color: #613DC1;
+    }
+
+    .tags a {
+      display: inline-block;
+      font-size: 0.8rem;
+      border: 1px solid #613DC1;
+      border-radius: 3px;
+      padding: 0.1rem 0.4rem;
+      margin-bottom: 0.2rem;
+      /* text-transform: uppercase; */
     }
 
     header {
