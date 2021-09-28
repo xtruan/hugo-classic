@@ -7,16 +7,16 @@
 
   {{ .Content }}
 
-  <ul>
+  <!--ul-->
       {{ $pages := .Pages }}
       {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
       {{ range (where $pages "Section" "!=" "") }}
-      <li>
-          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+      <!--li-->
+          <strong><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></strong>
           <span style="float: right" class="date">{{ .Date.Format "2006/01/02" }}</span>
           <p class="summary">{{ .Summary }}<a href="{{ .RelPermalink }}">[ continue reading... ]</a></p>
-      </li>
+      <!--/li-->
       {{ end }}
-  </ul>
+  <!--/ul-->
 </div>
 {{ partial "footer.html" . }}
