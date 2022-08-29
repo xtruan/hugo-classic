@@ -12,8 +12,8 @@
       {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
       {{ range (where $pages "Section" "!=" "") }}
       <!--li-->
-          <strong><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></strong>
-          <span style="float: right" class="date">{{ .Date.Format "2006/01/02" }}</span>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+          <p class="date">{{ .Date.Format "2006-01-02" }}</p>
           <p class="summary">{{ .Summary }}<a href="{{ .RelPermalink }}">[ continue reading... ]</a></p>
       <!--/li-->
       {{ end }}
